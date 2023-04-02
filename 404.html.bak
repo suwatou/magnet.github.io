@@ -1,0 +1,102 @@
+﻿<!--*********************************************
+                   _ooOoo_
+                  o8888888o
+                  88" . "88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+             .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      ."" '<  `.___\_<|>_/___.'  >'"".
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           佛祖保佑       永无BUG             
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           本源码为小洽与一名不方便透露人士制作。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>404,对不起我们跑路了</title><!--这里更改名字-->
+    <link rel="stylesheet" type="text/css" href="css/sy.css"><!--404页面整体配置文件-->
+    <link rel="stylesheet" type="text/css" href="css/cd.css"><!--菜单页面配置文件-->
+    <script language="JavaScript">
+      　　var max=0;
+        var sd=100;
+        var txt,lentxt,go;
+        function textlist(){
+          if (max>=lentxt){clearTimeout(go);}
+          document.getElementById('con').innerHTML+=txt.substr(max,1);
+          document.getElementById('con').innerHTML=document.getElementById('con').innerHTML.replace(/\$/ig,'<br>')
+          max++
+        }
+        function textticker(){
+           txt=document.getElementById('con').innerHTML;
+          txt=txt.replace(/\<br\>/ig,'$')
+          lentxt=txt.length;
+          document.getElementById('con').innerHTML='';
+          go = setInterval(textlist, sd);
+         }
+      //上面是自行输入文字,如果不喜欢可以自行更改
+      </script>
+              <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+              <script>
+                L2Dwidget.init({
+                  "model": { "jsonPath":"https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json", "scale": 1, "hHeadPos":0.5, "vHeadPos":0.618 },
+                  "display": { "position": "right", "width": 110, "height": 150, "hOffset": 0, "vOffset": -20 },
+                  "mobile": { "show": true, "scale": 0.5 },
+                  "react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
+                });//网页动态小人。
+              </script>
+</head>
+<body OnLoad="textticker()">
+<!--头部文件-->
+<div class="topnav">
+<a href="">联系站长</a><!--href里添加个人联系地址，tg，腾讯，qq等都行，害怕网爆可以设置#号-->
+<a href="https://www.xiaoqia.fun/index.html">前往博客</a><!--更改博客地址如果没有可以设置#号-->
+<a>站长邮箱：xiaoqiabk@163.com</a><!--这里更改邮箱-->
+  </div>
+<h1 id="zt">Error 404</h1>
+        <div class="zada">
+          <div id="con">
+            呜呜呜，很抱歉，没有给你想要的东西，让你失望了。<br>
+            如果你现在没事不妨听一听歌，体验一下作者的心情。<br>
+            毕竟404，这种事情我也不想发生，可是网站实在是运营不下去了，希望各位谅解，望许多年以后我们还是梁山好汉。</br>
+          </div>
+        </div><!--上面均可以根据个人更改文字-->
+</p>
+<!--<embed src="pl.mp3" hidden="true" autostart="true" loop="true">-->
+<script crossorigin="anonymous" integrity="sha384-KcyRSlC9FQog/lJsT+QA8AUIFBgnwKM7bxm7/YaX+NTr4D00npYawrX0h+oXI3a2" src="https://lib.baomitu.com/jquery/1.12.4/jquery.js"></script>
+<script id="music" src="https://music.xingyaox.com/player.js" key="d97f9ae0b6e14872bb5c3c4ede0f04f3"></script><!--这里是播放器代码可以自行前往梨花带雨播放器注册获取或者使用自行编辑的音乐播放器-->
+<script type="text/javascript">  
+        function is_mobile(){   
+          var regex_match=/(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;   
+          var u=navigator.userAgent;   
+          if (null==u){   
+            return true;   
+          }   
+          var result = regex_match.exec(u);  
+          if(null==result){   
+            return false  
+          }   
+          else{   
+            return true  
+          }   
+        }   
+        if(is_mobile()){   
+          document.location.href='./wap_404.html';//wap端网页地址如果网页地址起始页为wap端可以设置#号
+        }else{  
+          document.location.href='#';//pc端网页地址如果起始页为PC端可以设置#号
+        }  //这里是认证是否wap端或者pc端，如果是wap端跳转wap端网页如果是pc端则不跳转。。
+    </script>
+</body>
+</html>

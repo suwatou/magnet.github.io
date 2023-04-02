@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>404,站长吃不起饭了</title><!--这里更改名字-->
+    <link rel="stylesheet" type="text/css" href="css/wap_sy.css">
+</head>
+<!--本源码已开源-->
+<body>
+<!--头部文件-->
+<h1 id="zt">404</h1>
+<b2 id="zit">呜呜呜，很抱歉，没有给你想要的东西，让你失望了。</b2><p>
+</p>
+<b2 id="zit">如果你现在没事不妨听一听歌，体验一下作者的心情。</b2><p>
+
+</p>
+<b2 id="zit">毕竟404，这种事情我也不想发生，可是网站实在是运营不下去了，希望各位谅解，望许多年以后我们还是梁山好汉。</b2><p>
+
+</p>
+<a class="ys" href="https://jq.qq.com/?_wv=1027&k=fc1Ywlcl">详细请联系站长</a><a href="https://www.xiaoqia.fun/index.html"target="_blank">前往小洽博客</a>
+<p class="ys">站长邮箱：xiaoqiabk@163.com</p>
+<!--<embed src="pl.mp3" hidden="true" autostart="true" loop="true">-->
+<script crossorigin="anonymous" integrity="sha384-KcyRSlC9FQog/lJsT+QA8AUIFBgnwKM7bxm7/YaX+NTr4D00npYawrX0h+oXI3a2" src="https://lib.baomitu.com/jquery/1.12.4/jquery.js"></script>
+<script id="music" src="https://music.xingyaox.com/player.js" key="d97f9ae0b6e14872bb5c3c4ede0f04f3"></script>
+<script type="text/javascript">  
+        function is_mobile(){   
+          var regex_match=/(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;   
+          var u=navigator.userAgent;   
+          if (null==u){   
+            return true;   
+          }   
+          var result = regex_match.exec(u);  
+          if(null==result){   
+            return false  
+          }   
+          else{   
+            return true  
+          }   
+        }   
+        if(is_mobile()){   
+          document.location.href='#';
+        }else{  
+          document.location.href='./404.html';
+        }
+      </script>
+</body>
+</html>
